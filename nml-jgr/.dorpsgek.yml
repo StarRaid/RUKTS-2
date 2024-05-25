@@ -1,9 +1,0 @@
-notifications:
-  global:
-    irc:
-      - openttd
-      - openttd.notice
-
-  pull-request:
-  issue:
-  tag-created:

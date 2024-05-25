@@ -1,5 +1,5 @@
 @ECHO OFF
 
-python nml-jgr/nmlc
+python nml/nmlc
 
 PAUSE
