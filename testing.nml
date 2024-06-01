@@ -1,0 +1,118 @@
+
+grf{
+	grfid: "\57\48\10\37";
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESC);
+	version:1;
+	min_compatible_version:0;
+}
+
+cargotable {
+//Default cargos
+   PASS, MAIL, COAL, FOOD, GOLD, GOOD, GRAI, IORE, LVST, OIL_, PAPR, STEL, VALU, WHEA, WOOD,
+
+//Tropical cargos
+   CORE, DIAM, FRUT, MAIZ, RUBR, WATR, 
+
+//ECS
+   AORE, BDMT, BRCK, CERA, CERE, CMNT, DYES, FERT, FICR, FISH, GLAS, LIME, OLSD, PETR, PLAS, POTA, RFPR, SAND, SULP, TOUR, VEHI, WDPR, WOOL, 
+   
+//FIRS
+   BEAN, BEER, BOOM, CLAY, CASS, COKE, ENSP, EOIL, FMSP, FRVG, GRVL, IRON, METL, MNO2, MILK, MNSP, NICK, NITR, NUTS, PHOS, PIPE, PORE, QLME, RCYC, SASH, SCMT, SGBT, SGCN, SLAG, VBOD, VPTS, JAVA, COPR, SUGR, ZINC, KAOL, TWOD,
+   
+   SCRP, //Old scrap metal
+   
+//Nuclear stuff
+	URAN, NWST
+}
+
+
+railtypetable {
+    "RAIL", "ELRL"
+}
+
+
+
+
+//Length 8
+
+//4 views
+template template_8_4(x,y){
+	[x+0,	y,	10,	27,	-4,		-14,	ANIM] // NORTH	
+	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // NORTH EAST
+	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // EAST
+	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // SOUTH EAST
+	[x+0,	y,	10,	27,	-4,		-14,	ANIM] // SOUTH
+	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // SOUTH WEST
+	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // WEST
+	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // NORTH WEST
+}
+
+//8 views
+template template_8_8(x,y){
+	[x+0,	y,	10,	27,	-4,		-14,	ANIM] // NORTH	  
+	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // NORTH EAST
+	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // EAST
+	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // SOUTH EAST
+	[x+95,	y,	10,	27,	-4,		-14,	ANIM] // SOUTH
+	[x+107,	y,	22,	20,	-14,	-12,	ANIM] // SOUTH WEST
+	[x+131,	y,	33,	16,	-17,	-12,	ANIM] // WEST
+	[x+166,	y,	22,	20,	-6,		-12,	ANIM] // NORTH WEST
+}
+
+//8 views, reversed
+template template_8_8_rev(x,y){
+	[x+95,	y,	10,	27,	-4,		-14,	ANIM] // NORTH	  
+	[x+107,	y,	22,	20,	-14,	-12,	ANIM] // NORTH EAST
+	[x+131,	y,	33,	16,	-17,	-12,	ANIM] // EAST
+	[x+166,	y,	22,	20,	-6,		-12,	ANIM] // SOUTH EAST
+	[x+0,	y,	10,	27,	-4,		-14,	ANIM] // SOUTH
+	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // SOUTH WEST
+	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // WEST
+	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // NORTH WEST
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+spriteset(gfx_default, "base.png"){	template_8_8(0,0)}
+spriteset(gfx_default_rev, "base.png"){	template_8_8_rev(0,0)}
+
+switch(FEAT_TRAINS, PARENT, sw_testing_default, vehicle_is_reversed){1:gfx_default_rev;gfx_default;}
+
+item (FEAT_TRAINS, item_testing){
+	property{
+		name:							string(STR_TEMP);
+		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		vehicle_life:					100;
+		reliability_decay:				1;
+		cost_factor:					1;
+		running_cost_base:				1;
+		running_cost_factor:			1;	
+		speed:							200 mph;
+		track_type:						RAIL;
+		power:							5000 kW;
+		weight:							100 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.4;			
+		air_drag_coefficient:			0.1;	
+		length:							8;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+	}
+	graphics{
+		default:sw_testing_default;
+	}
+}
+
+
