@@ -344,9 +344,9 @@ template TEMPLATE_1_4(x,y){
 	
 
 
-spriteset(SPRITE_TEST_LOCO_BASE_A, "templates/lengths.png"){TEMPLATE_6_8_A(0,2)}
-spriteset(SPRITE_TEST_LOCO_BASE_B, "templates/lengths.png"){TEMPLATE_6_8_B(0,2)}
-spriteset(SPRITE_TEST_LOCO_BASE_C, "templates/lengths.png"){TEMPLATE_6_4(0,2)}
+spriteset(SPRITE_TEST_LOCO_BASE_A, "templates/lengths.png"){TEMPLATE_2_8_A(0,6)}
+spriteset(SPRITE_TEST_LOCO_BASE_B, "templates/lengths.png"){TEMPLATE_2_8_B(0,6)}
+spriteset(SPRITE_TEST_LOCO_BASE_C, "templates/lengths.png"){TEMPLATE_2_4(0,6)}
 
 
 
@@ -425,7 +425,7 @@ item (FEAT_TRAINS, ITEM_TEST, 6400){
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.4;			
 		air_drag_coefficient:			0.1;	
-		length:							6;
+		length:							2;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics{
