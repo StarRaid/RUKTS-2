@@ -54,18 +54,7 @@ template TEMPLATE_8_8_A(x,y){
 	[x*250+204,	y*40,	26,	24,		-8,		-15,	ANIM]	// NORTH WEST
 }
 
-template TEMPLATE_7_8_A(x,y){
-	[x*250,		y*40,	12,	30,		-5,		-17,	ANIM]	// NORTH	
-	[x*250+16,	y*40,	26,	24,		-16,	-15,	ANIM]	// NORTH EAST
-	[x*250+46,	y*40,	37,	22,		-19,	-17,	ANIM]	// EAST
-	[x*250+87,	y*40,	26,	24,		-8,		-15,	ANIM]	// SOUTH EAST
-	[x*250+117,	y*40,	12,	30,		-5,		-17,	ANIM]	// SOUTH
-	[x*250+133,	y*40,	26,	24,		-16,	-15,	ANIM]	// SOUTH WEST
-	[x*250+163,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
-	[x*250+204,	y*40,	26,	24,		-8,		-15,	ANIM]	// NORTH WEST
-}
-	
-template TEMPLATE_7_8_B(x,y){
+template TEMPLATE_8_8_B(x,y){
 	[x*250+117,	y*40,	12,	30,		-5,		-17,	ANIM]	// NORTH	
 	[x*250+133,	y*40,	26,	24,		-16,	-15,	ANIM]	// NORTH EAST
 	[x*250+163,	y*40,	37,	22,		-19,	-17,	ANIM]	// EAST
@@ -75,16 +64,49 @@ template TEMPLATE_7_8_B(x,y){
 	[x*250+46,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
 	[x*250+87,	y*40,	26,	24,		-8,		-15,	ANIM]	// NORTH WEST
 }
-	
-template TEMPLATE_7_4(x,y){
+
+template TEMPLATE_8_4_A(x,y){
 	[x*250,		y*40,	12,	30,		-5,		-17,	ANIM]	// NORTH	
 	[x*250+16,	y*40,	26,	24,		-16,	-15,	ANIM]	// NORTH EAST
 	[x*250+46,	y*40,	37,	22,		-19,	-17,	ANIM]	// EAST
 	[x*250+87,	y*40,	26,	24,		-8,		-15,	ANIM]	// SOUTH EAST
-	//[x*250,		y*40,	12,	30,		-5,		-17,	ANIM]	// SOUTH
-	//[x*250+16,	y*40,	26,	24,		-16,	-15,	ANIM]	// SOUTH WEST
-	//[x*250+46,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
-	//[x*250+87,	y*40,	26,	24,		-8,		-15,	ANIM]	// NORTH WEST
+	[x*250+117,	y*40,	12,	30,		-5,		-17,	ANIM]	// SOUTH
+	[x*250+133,	y*40,	26,	24,		-16,	-15,	ANIM]	// SOUTH WEST
+	[x*250+163,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
+	[x*250+204,	y*40,	26,	24,		-8,		-15,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_7_8_A(x,y){
+	[x*250,		y*40,	12,	30,		-5,		-19,	ANIM]	// NORTH	
+	[x*250+16,	y*40,	26,	24,		-14,	-16,	ANIM]	// NORTH EAST
+	[x*250+46,	y*40,	37,	22,		-15,	-17,	ANIM]	// EAST
+	[x*250+87,	y*40,	26,	24,		-8,		-15,	ANIM]	// SOUTH EAST
+	[x*250+117,	y*40,	12,	30,		-5,		-17,	ANIM]	// SOUTH
+	[x*250+133,	y*40,	26,	24,		-16,	-15,	ANIM]	// SOUTH WEST
+	[x*250+163,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
+	[x*250+204,	y*40,	26,	24,		-10,	-16,	ANIM]	// NORTH WEST
+}
+	
+template TEMPLATE_7_8_B(x,y){
+	[x*250+117,	y*40,	12,	30,		-5,		-19,	ANIM]	// NORTH	
+	[x*250+133,	y*40,	26,	24,		-14,	-16,	ANIM]	// NORTH EAST
+	[x*250+163,	y*40,	37,	22,		-15,	-17,	ANIM]	// EAST
+	[x*250+204,	y*40,	26,	24,		-8,		-15,	ANIM]	// SOUTH EAST
+	[x*250,		y*40,	12,	30,		-5,		-17,	ANIM]	// SOUTH
+	[x*250+16,	y*40,	26,	24,		-16,	-15,	ANIM]	// SOUTH WEST
+	[x*250+46,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
+	[x*250+87,	y*40,	26,	24,		-10,	-16,	ANIM]	// NORTH WEST
+}
+	
+template TEMPLATE_7_4(x,y){
+	[x*250,		y*40,	12,	30,		-5,		-19,	ANIM]	// NORTH	
+	[x*250+16,	y*40,	26,	24,		-14,	-16,	ANIM]	// NORTH EAST
+	[x*250+46,	y*40,	37,	22,		-15,	-17,	ANIM]	// EAST
+	[x*250+87,	y*40,	26,	24,		-8,		-15,	ANIM]	// SOUTH EAST
+	[x*250,		y*40,	12,	30,		-5,		-17,	ANIM]	// SOUTH
+	[x*250+16,	y*40,	26,	24,		-16,	-15,	ANIM]	// SOUTH WEST
+	[x*250+46,	y*40,	37,	22,		-19,	-17,	ANIM]	// WEST
+	[x*250+87,	y*40,	26,	24,		-10,	-16,	ANIM]	// NORTH WEST
 }
 
 /*	SPRITE_<train model name>_<type>_<up to 5 letter livery>_<A or B end first>
@@ -170,8 +192,7 @@ switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_TEXT,cargo_subtype){0:string(STR_GRF_NAME);
 */
 
 switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_ARTPART, extra_callback_info1){
-	1..3:ITEM_TEST;
-	4: [ITEM_TEST | CB_RESULT_REVERSED_VEHICLE];
+	1..4:ITEM_TEST;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
