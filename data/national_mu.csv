@@ -1,0 +1,15 @@
+cl_101_2; type; mu; properties; name;Class 101 (2 car);intro_date;1 12 1954;model_life;5;vehicle_life;50;cargo;CC_PASSENGERS;
+
+loading_speed;15;
+cost_factor;30;
+running_cost_factor;15;
+speed;70 mph;
+track_type;RAIL;
+power;224 hp;
+cargo_capacity;60;
+weight:							33 ton;
+tractive_effort_coefficient:	0.05;
+air_drag_coefficient:			0.1;
+length:							8;
+effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+bitmask_vehicle_info:			0;
