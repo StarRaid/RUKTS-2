@@ -1,15 +1,13 @@
-cl_101_2; type; mu; properties; name;Class 101 (2 car);intro_date;1 12 1954;model_life;5;vehicle_life;50;cargo;CC_PASSENGERS;
+train; cl_101_2; type; mu; 
+properties; name;str_class_101_2;intro_date;1 12 1954;model_life;5;vehicle_life;50;cargo;CC_PASSENGERS;loading_speed;15;cost_factor;30;running_cost_factor;15;speed;70 mph;track_type;RAIL;power;224 hp;cargo_capacity;60;weight;33 ton;tractive_effort_coefficient;0.05;air_drag_coefficient;0.1;couple_group;15;
+coaches;2;coach(1);length;8;sprite;0;effect;diesel;power;125;capacity;50;coach(2);length;8;sprite;1 reversed;effect;diesel;power;125;capacity;50;
+train; cl_101_2; type; mu; 
+properties; name;str_class_101_3;intro_date;1 12 1954;model_life;5;vehicle_life;50;cargo;CC_PASSENGERS;loading_speed;15;cost_factor;30;running_cost_factor;15;speed;70 mph;track_type;RAIL;power;224 hp;cargo_capacity;60;weight;33 ton;tractive_effort_coefficient;0.05;air_drag_coefficient;0.1;couple_group;15;var_group;cl_101_2
+coaches;2;coach(1);length;8;sprite;0;effect;diesel;power;125;capacity;50;coach(2);length;8;sprite;1;effect;none;power;0;capacity;70;coach(3);length;8;sprite;2 reversed;effect;diesel;power;125;capacity;50;
+train; cl_101_3; type; ignore;
+p
 
-loading_speed;15;
-cost_factor;30;
-running_cost_factor;15;
-speed;70 mph;
-track_type;RAIL;
-power;224 hp;
-cargo_capacity;60;
-weight:							33 ton;
-tractive_effort_coefficient:	0.05;
-air_drag_coefficient:			0.1;
-length:							8;
-effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-bitmask_vehicle_info:			0;
+General layout:
+train;<train name>;type;<type name>;
+properties;<property>;<value>;[<property>;<value>;]...
+[coaches;<number of coaches>;[coach(<number>);<property>;<coach value>;]...]
