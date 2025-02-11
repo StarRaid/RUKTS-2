@@ -31,7 +31,12 @@ cargotable {
 
 
 railtypetable {
-	"RAIL", "ELRL"
+    "SAAN", "RAIL", "SAAE", "ELRL", "SAA3", "3RDR", "SAAZ", "SAA4", "4RDR", 
+	RAIL: [SAAN, RAIL],
+	ELRL: [SAAA, SAAE, ELRL],
+	SAA3: [SAA3, "3RDR", ELRL],
+	SAAZ: [SAAZ, "3RDC", ELRL],
+	SAA4: [SAA4, "4RDR", "3RDR", SAA3, ELRL]
 }
 
 
@@ -358,7 +363,7 @@ switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_TEXT,cargo_subtype){0:string(STR_GRF_NAME);
 	
 	IDs:	maximum is 65535
 	
-	nvm can't use this
+	nvm can't use this, but use something similar
 	
 			NXYYZ
 			N = Type (0=TOPS class, 1 = TOPS MU part, 2 = steam loco, 3 = tender, 4 = coach or wagon, 5 = pre-tops diesel/electric loco & MUs, 6 = Non National Rail vehicles, donut use 7+)
@@ -400,7 +405,7 @@ switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_TEXT,cargo_subtype){0:string(STR_GRF_NAME);
 */
 
 switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_ARTPART, extra_callback_info1){
-	1..4:ITEM_TEST;
+	1..3:ITEM_TEST;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -420,7 +425,7 @@ item (FEAT_TRAINS, ITEM_TEST, 6400){
 		running_cost_factor:			1;	
 		speed:							200 mph;
 		track_type:						RAIL;
-		power:							5000 kW;
+		power:							100 kW;
 		weight:							100 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.4;			
@@ -435,199 +440,6 @@ item (FEAT_TRAINS, ITEM_TEST, 6400){
 		articulated_part:SW_TEST_LOCO_ARTPART;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Length 8
-
-//4 views
-template template_old_8_4(x,y){
-	[x+0,	y,	10,	26,	-4,		-14,	ANIM] // NORTH	
-	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // NORTH EAST
-	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // EAST
-	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // SOUTH EAST
-	[x+0,	y,	10,	26,	-4,		-14,	ANIM] // SOUTH
-	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // SOUTH WEST
-	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // WEST
-	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-//8 views
-template template_old_8_8(x,y){
-	[x+0,	y,	10,	26,	-4,		-14,	ANIM] // NORTH	  
-	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // NORTH EAST
-	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // EAST
-	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // SOUTH EAST
-	[x+95,	y,	10,	26,	-4,		-14,	ANIM] // SOUTH
-	[x+107,	y,	22,	20,	-14,	-12,	ANIM] // SOUTH WEST
-	[x+131,	y,	33,	16,	-17,	-12,	ANIM] // WEST
-	[x+166,	y,	22,	20,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-//8 views, reversed
-template template_old_8_8_rev(x,y){
-	[x+95,	y,	10,	26,	-4,		-14,	ANIM] // NORTH	  
-	[x+107,	y,	22,	20,	-14,	-12,	ANIM] // NORTH EAST
-	[x+131,	y,	33,	16,	-17,	-12,	ANIM] // EAST
-	[x+166,	y,	22,	20,	-6,		-12,	ANIM] // SOUTH EAST
-	[x+0,	y,	10,	26,	-4,		-14,	ANIM] // SOUTH
-	[x+12,	y,	22,	20,	-14,	-12,	ANIM] // SOUTH WEST
-	[x+36,	y,	33,	16,	-17,	-12,	ANIM] // WEST
-	[x+71,	y,	22,	20,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-
-//Length 7
-
-//4 views
-template template_old_7_4(x,y){
-	[x+0,	y,	10,	24,	-4,		-14,	ANIM] // NORTH	
-	[x+12,	y,	20,	19,	-12,	-12,	ANIM] // NORTH EAST
-	[x+34,	y,	29,	16,	-13,	-12,	ANIM] // EAST
-	[x+65,	y,	20,	19,	-4,		-11,	ANIM] // SOUTH EAST
-	[x+0,	y,	10,	24,	-4,		-12,	ANIM] // SOUTH
-	[x+12,	y,	20,	19,	-14,	-11,	ANIM] // SOUTH WEST
-	[x+34,	y,	29,	16,	-17,	-12,	ANIM] // WEST
-	[x+65,	y,	20,	19,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-//8 views
-template template_old_7_8(x,y){
-	[x+0,	y,	10,	24,	-4,		-14,	ANIM] // NORTH	  
-	[x+12,	y,	20,	19,	-12,	-12,	ANIM] // NORTH EAST
-	[x+34,	y,	29,	16,	-13,	-12,	ANIM] // EAST
-	[x+65,	y,	20,	19,	-4,		-11,	ANIM] // SOUTH EAST
-	[x+87,	y,	10,	24,	-4,		-12,	ANIM] // SOUTH
-	[x+99,	y,	20,	19,	-14,	-11,	ANIM] // SOUTH WEST
-	[x+121,	y,	29,	16,	-17,	-12,	ANIM] // WEST
-	[x+152,	y,	20,	19,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-//8 views, reversed
-template template_old_7_8_rev(x,y){
-	[x+87,	y,	10,	24,	-4,		-14,	ANIM] // NORTH	  
-	[x+99,	y,	20,	19,	-12,	-12,	ANIM] // NORTH EAST
-	[x+121,	y,	29,	16,	-13,	-12,	ANIM] // EAST
-	[x+152,	y,	20,	19,	-4,		-11,	ANIM] // SOUTH EAST
-	[x+0,	y,	10,	24,	-4,		-12,	ANIM] // SOUTH
-	[x+12,	y,	20,	19,	-14,	-11,	ANIM] // SOUTH WEST
-	[x+34,	y,	29,	16,	-17,	-12,	ANIM] // WEST
-	[x+65,	y,	20,	19,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-
-//Length 6
-
-//4 views
-template template_old_6_4(x,y){
-	[x+0,	y,	10,	22,	-4,		-14,	ANIM] // NORTH	
-	[x+12,	y,	18,	18,	-10,	-12,	ANIM] // NORTH EAST
-	[x+32,	y,	25,	16,	-9,		-12,	ANIM] // EAST
-	[x+59,	y,	18,	18,	-2,		-10,	ANIM] // SOUTH EAST
-	[x+0,	y,	10,	22,	-4,		-10,	ANIM] // SOUTH
-	[x+12,	y,	18,	18,	-14,	-10,	ANIM] // SOUTH WEST
-	[x+32,	y,	25,	16,	-17,	-12,	ANIM] // WEST
-	[x+59,	y,	18,	18,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-//8 views
-template template_old_6_8(x,y){
-	[x+0,	y,	10,	22,	-4,		-14,	ANIM] // NORTH	  
-	[x+12,	y,	18,	18,	-10,	-12,	ANIM] // NORTH EAST
-	[x+32,	y,	25,	16,	-9,		-12,	ANIM] // EAST
-	[x+59,	y,	18,	18,	-2,		-10,	ANIM] // SOUTH EAST
-	[x+79,	y,	10,	22,	-4,		-10,	ANIM] // SOUTH
-	[x+91,	y,	18,	18,	-14,	-10,	ANIM] // SOUTH WEST
-	[x+111,	y,	25,	16,	-17,	-12,	ANIM] // WEST
-	[x+138,	y,	18,	18,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-//8 views, reversed
-template template_old_6_8_rev(x,y){
-	[x+79,	y,	10,	22,	-4,		-14,	ANIM] // NORTH	  
-	[x+91,	y,	18,	18,	-10,	-12,	ANIM] // NORTH EAST
-	[x+111,	y,	25,	16,	-9,		-12,	ANIM] // EAST
-	[x+138,	y,	18,	18,	-2,		-10,	ANIM] // SOUTH EAST
-	[x+0,	y,	10,	22,	-4,		-10,	ANIM] // SOUTH
-	[x+12,	y,	18,	18,	-14,	-10,	ANIM] // SOUTH WEST
-	[x+32,	y,	25,	16,	-17,	-12,	ANIM] // WEST
-	[x+59,	y,	18,	18,	-6,		-12,	ANIM] // NORTH WEST
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-spriteset(gfx_olddefault, "base.png"){	template_old_6_8(0,60)}
-spriteset(gfx_olddefault_rev, "base.png"){	template_old_6_8_rev(0,60)}
-
-switch(FEAT_TRAINS, PARENT, sw_testingold_default, vehicle_is_reversed){1:gfx_olddefault_rev;gfx_olddefault;}
-
-item (FEAT_TRAINS, item_testingold){
-	property{
-		name:							string(STR_TEMP);
-		climates_available:				NO_CLIMATE;
-		introduction_date:				date(1,1,1);
-		model_life:						VEHICLE_NEVER_EXPIRES;
-		vehicle_life:					100;
-		reliability_decay:				1;
-		cost_factor:					1;
-		running_cost_base:				1;
-		running_cost_factor:			1;	
-		speed:							200 mph;
-		track_type:						RAIL;
-		power:							5000 kW;
-		weight:							100 ton;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.4;			
-		air_drag_coefficient:			0.1;	
-		length:							6;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-	}
-	graphics{
-		default:sw_testingold_default;
-	}
-}
-
-
-
-
-
-
-
 
 
 
