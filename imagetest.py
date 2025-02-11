@@ -3,6 +3,7 @@ from PIL import Image as img
 import math
 
 base=img.open("templates/lengths.png")
+#paletteImage=img.open("templates/palette.png")
 numbers=[]
 templates=[]
 
@@ -25,10 +26,10 @@ templates.reverse()
 outX=int(input("Articulated parts: "))
 outY=int(input("Livery count: "))
 outY+=int(input("Fixture type count: "))
-vehLen=int(input("Vehicle sprite length: "))-1
 
 output = img.new(mode= "RGB", size= (250*outX,40*outY), color=(255,255,255))
-#output.putpalette(base.palette().getdata())
+
+vehLen=int(input("Vehicle sprite length: "))-1
 
 for x in range(0,outX):
     for y in range(0,outY):
@@ -53,5 +54,6 @@ for x in range(0,outX):
 
 # Slut
 
+#output.putpalette(paletteImage.getpalette())
 output.save("output.png")
 
