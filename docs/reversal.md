@@ -21,13 +21,14 @@ Bit one checks if we need to output a reversed sprite or not.
 Bits two and three select the livery from the cargo subtype.
 
 ## This switch can be referenced irregardless of where the vehicle is in the consist.
-If this switch is referenced by a non-reversed vehicle of the intended ID, it will always return its non reversed sprite of the correct livery (checking its own `cargo_subtype`).
-If this switch is referenced by a reversed vehicle of the intended ID, but is not in a consist that does not meet advanced reversal behaviour requirements, it will return its reversed sprite of the correct livery (checking its own `cargo_subtype`).
-If this switch is referenced by a reversed vehicle of any ID, and is in a consist that meets advanced reversal behaviour, it will return the correct livery of the vehicles equal (checking the `cargo_subtype` of the vehicle of the equivalent position at the opposite end of the consist (`position_in_consist_from_end`-`position_in_consist`)).
+- If this switch is referenced by a non-reversed vehicle of the intended ID, it will always return its non reversed sprite of the correct livery (checking its own `cargo_subtype`).
+- If this switch is referenced by a reversed vehicle of the intended ID, but is not in a consist that does not meet advanced reversal behaviour requirements, it will return its reversed sprite of the correct livery (checking its own `cargo_subtype`).
+- If this switch is referenced by a reversed vehicle of any ID, and is in a consist that meets advanced reversal behaviour, it will return the correct livery of the vehicles equal (checking the `cargo_subtype` of the vehicle of the equivalent position at the opposite end of the consist (`position_in_consist_from_end`-`position_in_consist`)).
 
 The function to check if the vehicle meets reversal behaviour requirements. It returns 1 if:
- - All vehicles in the consist belong to a specific reversal group (use badges or callback info).
- - The front and rear most vehicles are IDs that have cabs (use badges for this?)
+
+- All vehicles in the consist belong to a specific reversal group (use badges or callback info).
+- The front and rear most vehicles are IDs that have cabs (use badges for this?)
  
 Use OR to check for multiple groups if the vehicle belongs to multiple groups.
 
@@ -35,4 +36,4 @@ Use OR to check for multiple groups if the vehicle belongs to multiple groups.
 
 - Readability; This will be impossible for a human to interpret when viewing the finished NML file, so we must put an explanation and breakdown of how and why this thing works.
 - We still don't know how *Global* sound and particle effect checks will fit into this.
- - Any switches that change vehicle stats will be fine as they are generally defined next to the `item` block of the vehicle.
+- Any switches that change vehicle stats will be fine as they are generally defined next to the `item` block of the vehicle.
