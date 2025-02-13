@@ -330,10 +330,10 @@ template TEMPLATE_1_4(x,y){
 		
 		NON-TOPS:
 		
-			Company followed by model name or number, followed by variant if applicable
-			Steam: e.g. LMSBLACK5, LBSCRE1
-			Metro: e.g. LU1973, TWMETRO_1
-			Wagon: e.g. TEATANK, MARK3_1 
+			Company or wagon type, followed by model name or number, followed by variant if applicable
+			Steam: e.g. LMS_BLACK5, LBSCRE1
+			Metro: e.g. LU_1973, TAWM_METROCAR
+			Wagon: e.g. TANK_TEA, PASS_MARK3_1 
 		
 		TOPS:
 		
@@ -358,6 +358,10 @@ spriteset(SPRITE_TEST_LOCO_BASE_C, "templates/lengths.png"){TEMPLATE_2_4(0,6)}
 switch(FEAT_TRAINS,PARENT,SW_TEST_LOCO_BASE,vehicle_is_reversed){0:SPRITE_TEST_LOCO_BASE_A;SPRITE_TEST_LOCO_BASE_B;}
 switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_LIVERY,cargo_subtype){0:SW_TEST_LOCO_BASE;SPRITE_TEST_LOCO_BASE_C;}
 switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_TEXT,cargo_subtype){0:string(STR_GRF_NAME);1:string(STR_GRF_DESC);CB_RESULT_NO_TEXT;}
+
+
+
+
 
 /*	
 	
@@ -436,7 +440,7 @@ item (FEAT_TRAINS, ITEM_TEST, 6400){
 	graphics{
 		default:SW_TEST_LOCO_LIVERY;
 		cargo_subtype_text:SW_TEST_LOCO_TEXT;
-		cargo_capacity:return 40;
+		cargo_capacity:SW_TEST_LIMIT_0;
 		articulated_part:SW_TEST_LOCO_ARTPART;
 	}
 }
