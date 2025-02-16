@@ -2,7 +2,7 @@
 from PIL import Image as img
 import math
 
-base=img.open("templates/lengths.png")
+base=img.open("../../templates/lengths.png")
 #paletteImage=img.open("templates/palette.png")
 numbers=[]
 templates=[]

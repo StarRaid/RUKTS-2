@@ -2,7 +2,7 @@
 from PIL import Image as img
 import math
 
-base=img.open("templates/lengths.png")
+base=img.open("../../templates/lengths.png")
 #paletteImage=img.open("templates/palette.png")
 numbers=[]
 templates=[]
@@ -60,7 +60,7 @@ for x in range(0,outX):
         #Sprite conversion
         for n in range(0,8):
             size=sampleSizes[s][n%4]
-            coord=(sampleCoordsIn[s][n][0]+sampleOffset[s]*(x+offsetX),sampleCoordsIn[s][n][1]+25*(y+offsetY))
+            coord=(sampleCoordsIn[s][n][0]+sampleOffset[s]*x+offsetX,sampleCoordsIn[s][n][1]+25*y+offsetY)
             target=makeCoords(coord,size)
             imgTemp=imgIn.crop(target)
             coord=(250*x+sampleCoordsOut[s][n][0],40*y+sampleCoordsOut[s][n][1])
