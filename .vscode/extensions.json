@@ -9,6 +9,7 @@
 		"ms-python.debugpy",
 		"ms-python.python",
 		"ms-python.vscode-pylance",
-		"mechatroner.rainbow-csv"
+		"mechatroner.rainbow-csv",
+		"pnda.nml-language"
 	]
 }
