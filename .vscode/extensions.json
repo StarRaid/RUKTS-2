@@ -1,0 +1,14 @@
+{
+	"recommendations": [
+		"formulahendry.auto-rename-tag",
+		"formulahendry.auto-close-tag",
+		"mrmlnc.vscode-duplicate",
+		"kisstkondoros.vscode-gutter-preview",
+		"ms-vscode.notepadplusplus-keybindings",
+		"ionutvmi.path-autocomplete",
+		"ms-python.debugpy",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"mechatroner.rainbow-csv"
+	]
+}
