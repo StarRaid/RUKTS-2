@@ -1,0 +1,22 @@
+family,designer,introduction_year,liveries,types,notes
+BR Mark 1,British Rail,1951,{},{}
+BR Mark 2D-F,British Rail,1971,{},{TSO; BSO; FO; FK; BFK; DBSO}
+BR Mark 2A-C,British Rail,1967,{},{TSO; BSO; FO; FK; BFK}
+BR Mark 3,British Rail,1976,{},{TRSB; TRUB; TRUK; TF; TS; TGS}
+BR Mark 3A,British Rail,1975,{},{RFB; SLEP; FO; BFO; TSO; DVT}
+BR Mark 4,British Rail,,{},{FO; RSB; TSO; TSOE; DVT}
+LNER Teak,Gresley,,{},{}
+LNER Thompson,Thompson,,{},{}
+GNR Quadart,Gresley,1921,{},{}
+GWR Period 1,Churchwood,,{},{}
+GWR Period 2,Hawksworth,,{},{}
+Midland Period 1,,,{},{}
+LMS Standards,Stanier + Others,1923,{},{}
+SR Maunsell,Maunsell,,{},{Corridor First; Corridor First Brake; Third; Corridor Third Brake; Corridor Composite; Corridor Brake Composite; Restaurant; Dining}
+SR Bulleid,Bulleid,,{},{Corridor First; Corridor First Brake; Third; Corridor Third Brake; Corridor Composite; Corridor Brake Composite; Restaurant; Dining}
+Pioneer,Generic,,{},{},Based on first Victorian stagecoach-like coaches
+Four-Wheel,Generic,,{},{}
+Six-Wheel,Generic,,{},{}
+Bogie,Generic,,{},{},Based on Metropolitan Full Third 394
+Long Bogie,Generic,,{},{},Based on the "Hundred Seater"
+Clerestory,,,{},{}
