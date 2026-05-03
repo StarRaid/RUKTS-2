@@ -12,7 +12,7 @@ GWR Period 1,Churchwood,,{},{}
 GWR Period 2,Hawksworth,,{},{}
 Midland Period 1,,,{},{}
 LMS Standards,Stanier + Others,1923,{},{}
-SR Maunsell,Maunsell,,{},{Corridor First; Corridor First Brake; Third; Corridor Third Brake; Corridor Composite; Corridor Brake Composite; Restaurant; Dining}
+SR Maunsell,Maunsell,,{},{FK; BFK; T; BTK; CK; BCK; Restaurant; Dining}
 SR Bulleid,Bulleid,,{},{Corridor First; Corridor First Brake; Third; Corridor Third Brake; Corridor Composite; Corridor Brake Composite; Restaurant; Dining}
 Pioneer,Generic,,{},{},Based on first Victorian stagecoach-like coaches
 Four-Wheel,Generic,,{},{}
@@ -20,3 +20,43 @@ Six-Wheel,Generic,,{},{}
 Bogie,Generic,,{},{},Based on Metropolitan Full Third 394
 Long Bogie,Generic,,{},{},Based on the "Hundred Seater"
 Clerestory,,,{},{}
+
+Locomotive hauled carriage codes,Use these regardless of era,,,,Post-1956 [S]econd or [T]hird became Standard,
+Code,Class,Mod 1,Mod 2,Mod 3,Special
+F,First,Compartments with no gangways
+FK,First,Corridor
+BFK,First,Corridor,Brake
+RFB,First,Restaurant,Buffet
+UD,Unclassified,Dining
+S,Second,Compartments with no gangways
+SK,Second,Corridor
+T,Third,Compartments with no gangways
+TK,Third,Corridor
+BTK,Third,Corridor,Brake
+C,Composite,Compartments with no gangways
+CK,Composite,Corridor
+BCK,Composite,Corridor,Brake
+SLEP,Either,Sleeper,Pantry
+TSO,Standard,Tourist,Open
+BSO,Standard,Brake,Open
+TGS,Standard,Tourist,Guard compartment
+TSO,Standard,Tourist,Open
+PFB,Pullman
+PFK,Pullman
+PFP,Pullman
+POS,Mail van,Post office
+DBSO,Standard,Driving cab,Brake,Open
+DBF,First,Driving cab,Brake
+DBC,Composite,Driving cab,Brake,Compartments with no gangways
+DVT,Mail van,Driving cab
+
+Multiple Unit carriage codes,Use these regardless of era,HST Mark 3 coaches use these for some reason
+D,Driving cab
+M/T,Motor/Non powered Trailer
+P,Pantograph or space for pantograph to be mounted
+R,Restaurant
+F/S/C/V,First/Standard/Composite class/Luggage & mail van,Omit for unclassified
+B,Buffet
+L,Lavatory
+D or W,Disabled or Wheelchair provisions
+E,HST end coach
