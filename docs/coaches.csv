@@ -1,33 +1,44 @@
 family,designer,introduction_year,liveries,types,notes
-BR Mark 1,British Rail,1951,{},{}
-BR Mark 2D-F,British Rail,1971,{},{TSO; BSO; FO; FK; BFK; DBSO}
-BR Mark 2A-C,British Rail,1967,{},{TSO; BSO; FO; FK; BFK}
-BR Mark 3,British Rail,1976,{},{TRSB; TRUB; TRUK; TF; TS; TGS}
-BR Mark 3A,British Rail,1975,{},{RFB; SLEP; FO; BFO; TSO; DVT}
+BR Mark 1,British Rail,1951,{},{FK; CK; SK; FO; TSO; BFK; BCK; BSO; RKB; RK; RFO; RSO; SLEP; SLF; SLC; DSO (423 style); DBSO (411 style)}
+BR Mark 1 Van,British Rail,1951,{},{BG; TPO; POS; PCV; NBA}
+BR Mark 1 Pullman,British Rail,1960,{},{PUB; PFK; PFP; PSP; PSK}
+BR Mark 1 GUV,British Rail,1954,{},{GUV; NKA}
+BR Mark 1 CCT,British Rail,1954,{},{}
+BR Mark 1 Sub,British Rail,1954,{BR Maroon; BR Blue; BR Blue & Grey; LSE; NSE},{F; C; S; SO; BS; DBS}
+BR Mark 1 Short Sub,British Rail,1954,{Same as above},{C; S; SO; BS; DC}
+BR Mark 2D-F,British Rail,1971,{},{TSO; BSO; FO; FK; RFB; BFK; DBSO}
+BR Mark 2 Pullman,British Rail,1966,{},{PFB; PFK; PFP}
+BR Mark 2A-C,British Rail,1966,{BR Maroon; BR Green; BR Blue & Grey},{TSO; BSO; FO; FK; BFK}
+BR Mark 3,British Rail,1976,{BR Blue & Grey},{TRSB; TRUB; TRUK; TF; TS; TGS}
+BR Mark 3A,British Rail,1975,{BR Blue & Grey},{RFB; SLEP; FO; BFO; TSO; DVT}
 BR Mark 4,British Rail,,{},{FO; RSB; TSO; TSOE; DVT}
 LNER Teak,Gresley,,{},{}
 LNER Thompson,Thompson,,{},{}
 GNR Quadart,Gresley,1921,{},{}
 GWR Period 1,Churchwood,,{},{}
 GWR Period 2,Hawksworth,,{},{}
-Midland Period 1,,,{},{}
 LMS Standards,Stanier + Others,1923,{},{}
-SR Maunsell,Maunsell,,{},{FK; BFK; T; BTK; CK; BCK; Restaurant; Dining}
-SR Bulleid,Bulleid,,{},{Corridor First; Corridor First Brake; Third; Corridor Third Brake; Corridor Composite; Corridor Brake Composite; Restaurant; Dining}
+SR Maunsell,Maunsell,,{SR Green; BR Blue; BR Blue & Grey; LSE; NSE Early; NSE Late},{FK; BFK; T; BTK; CK; BCK; Restaurant; RU; DBTO}
+SR Bulleid,Bulleid,,{SR Green; BR Blue; BR Blue & Grey; LSE; NSE Early; NSE Late},{FK; BFK; T; BTK; CK; BCK; Restaurant; RU}
 Pioneer,Generic,,{},{},Based on first Victorian stagecoach-like coaches
 Four-Wheel,Generic,,{},{}
 Six-Wheel,Generic,,{},{}
 Bogie,Generic,,{},{},Based on Metropolitan Full Third 394
 Long Bogie,Generic,,{},{},Based on the "Hundred Seater"
 Clerestory,,,{},{}
+Pullman,Pullman,1927,{Pullman Brown & Cream; Royal Scotsman Crimson}
 
-Locomotive hauled carriage codes,Use these regardless of era,,,,Post-1956 [S]econd or [T]hird became Standard,
+Locomotive hauled carriage codes,Use these regardless of era,,,,Post-1956 [S]econd or [T]hird become [S]tandard,
 Code,Class,Mod 1,Mod 2,Mod 3,Special
 F,First,Compartments with no gangways
 FK,First,Corridor
 BFK,First,Corridor,Brake
+RK,Non-seating,Restaurant,Kitchen
+RFO,First,Restaurant,Open
+RSO,Standard,Restaurant,Open
 RFB,First,Restaurant,Buffet
-UD,Unclassified,Dining
+RKB,Unclassified,Kitchen,Buffet
+RU,Unclassified,Restaurant
 S,Second,Compartments with no gangways
 SK,Second,Corridor
 T,Third,Compartments with no gangways
@@ -37,23 +48,30 @@ C,Composite,Compartments with no gangways
 CK,Composite,Corridor
 BCK,Composite,Corridor,Brake
 SLEP,Either,Sleeper,Pantry
+SLF,First,Sleeper
+SLC,Composite,Sleeper
 TSO,Standard,Tourist,Open
 BSO,Standard,Brake,Open
 TGS,Standard,Tourist,Guard compartment
 TSO,Standard,Tourist,Open
-PFB,Pullman
-PFK,Pullman
-PFP,Pullman
+PUB,Pullman Unclassified,Bar
+PFB,Pullman First,Brake
+PFK,Pullman First,Kitchen
+PFP,Pullman First,Parlour
+PSP,Pullman Standard,Parlour
+PTP,Pullman Third,Parlour
 POS,Mail van,Post office
+DBTO,Third,Driving cab,Brake,Open
 DBSO,Standard,Driving cab,Brake,Open
-DBF,First,Driving cab,Brake
-DBC,Composite,Driving cab,Brake,Compartments with no gangways
+DBS,Standard,Driving cab,Brake,Compartments with no gangways
+DC,Composite,Driving cab,Compartments with no gangways
+DSO,Standard,Driving cab,Open
 DVT,Mail van,Driving cab
 
 Multiple Unit carriage codes,Use these regardless of era,HST Mark 3 coaches use these for some reason
 D,Driving cab
 M/T,Motor/Non powered Trailer
-P,Pantograph or space for pantograph to be mounted
+P,Pantograph or space for pantograph to be mounted,P for Pullman in the case of the Class 403
 R,Restaurant
 F/S/C/V,First/Standard/Composite class/Luggage & mail van,Omit for unclassified
 B,Buffet
