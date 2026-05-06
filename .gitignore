@@ -4,6 +4,7 @@ copy.bat
 run.bat
 output.png
 *.lnk
+*.grf
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

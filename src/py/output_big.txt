@@ -1,0 +1,408 @@
+
+
+template TEMPLATE_12_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-19,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-24,	-15,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-35,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-8,		-15,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_12_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-19,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-24,	-15,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-35,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-8,		-15,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_12_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-19,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-24,	-15,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-35,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-8,		-15,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_11_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-21,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-22,	-16,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-31,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-10,		-16,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_11_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-21,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-22,	-16,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-31,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-10,		-16,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_11_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-21,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-22,	-16,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-31,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-10,		-16,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_10_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-23,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-20,	-17,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-27,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-12,		-17,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_10_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-23,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-20,	-17,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-27,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-12,		-17,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_10_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-23,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-20,	-17,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-27,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-12,		-17,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_9_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-25,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-18,	-18,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-23,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-14,		-18,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_9_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-25,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-18,	-18,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-23,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-14,		-18,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_9_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-25,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-18,	-18,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-23,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-14,		-18,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_8_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_8_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_8_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_7_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-29,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-14,	-20,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-15,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-18,		-20,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_7_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-29,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-14,	-20,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-15,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-18,		-20,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_7_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-29,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-14,	-20,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-15,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-18,		-20,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_6_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-31,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-12,	-21,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-11,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-20,		-21,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_6_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-31,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-12,	-21,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-11,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-20,		-21,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_6_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-31,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-12,	-21,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-11,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-20,		-21,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_5_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-33,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-10,	-22,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-7,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-22,		-22,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_5_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-33,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-10,	-22,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-7,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-22,		-22,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_5_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-33,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-10,	-22,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-7,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-22,		-22,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_4_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-35,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-8,	-23,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-3,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-24,		-23,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_4_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-35,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-8,	-23,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-3,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-24,		-23,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_4_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-35,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-8,	-23,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-3,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-24,		-23,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_3_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-37,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-6,	-24,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		1,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-26,		-24,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_3_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-37,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-6,	-24,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		1,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-26,		-24,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_3_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-37,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-6,	-24,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		1,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-26,		-24,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_2_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-39,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-4,	-25,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		5,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-28,		-25,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_2_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-39,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-4,	-25,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		5,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-28,		-25,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_2_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-39,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-4,	-25,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		5,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-28,		-25,	ANIM]	// NORTH WEST
+}
+
+
+
+template TEMPLATE_1_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-41,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-2,	-26,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		9,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-30,		-26,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_1_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-41,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-2,	-26,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		9,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-30,		-26,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_1_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-41,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-2,	-26,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		9,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-30,		-26,	ANIM]	// NORTH WEST
+}
+
