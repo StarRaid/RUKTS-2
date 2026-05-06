@@ -49,6 +49,38 @@ railtypetable {
 */
 
 
+template TEMPLATE_9_8_A(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-25,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-18,	-18,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-23,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300+149,	y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+165,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+203,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+260,	y*50,	34,	28,		-14,		-18,	ANIM]	// NORTH WEST
+}
+template TEMPLATE_9_8_B(x,y){
+	[x*300+149,	y*50,	12,	40,		-5,		-25,	ANIM]	// NORTH
+	[x*300+165,	y*50,	34,	28,		-18,	-18,	ANIM]	// NORTH EAST
+	[x*300+203,	y*50,	53,	22,		-23,	-17,	ANIM]	// EAST
+	[x*300+260,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-14,		-18,	ANIM]	// NORTH WEST
+}
+
+template TEMPLATE_9_4(x,y){
+	[x*300,		y*50,	12,	40,		-5,		-25,	ANIM]	// NORTH
+	[x*300+16,	y*50,	34,	28,		-18,	-18,	ANIM]	// NORTH EAST
+	[x*300+54,	y*50,	53,	22,		-23,	-17,	ANIM]	// EAST
+	[x*300+111,	y*50,	34,	28,		-16,		-19,	ANIM]	// SOUTH EAST
+	[x*300,		y*50,	12,	40,		-5,		-27,	ANIM]	// SOUTH
+	[x*300+16,	y*50,	34,	28,		-16,	-19,	ANIM]	// SOUTH WEST
+	[x*300+54,	y*50,	53,	22,		-19,	-17,	ANIM]	// WEST
+	[x*300+111,	y*50,	34,	28,		-14,		-18,	ANIM]	// NORTH WEST
+}
+
 
 template TEMPLATE_8_8_A(x,y){
 	[x*250,		y*40,	12,	30,		-5,		-17,	ANIM]	// NORTH	
@@ -320,7 +352,9 @@ template TEMPLATE_1_4(x,y){
 	[x*250+87,	y*40,	26,	24,		-22,	-22,	ANIM]	// NORTH WEST
 }
 
-
+spriteset(SPRITE_BLANK, "src/templates/lengths.png"){
+	[0,0,1,1,1,1]
+}
 
 /*	SPRITE_<train model name>_<type>_<up to 5 letter livery>_<A or B end first>
 
@@ -349,19 +383,11 @@ template TEMPLATE_1_4(x,y){
 	
 
 
-spriteset(SPRITE_TEST_LOCO_BASE_A, "templates/lengths.png"){TEMPLATE_2_8_A(0,6)}
-spriteset(SPRITE_TEST_LOCO_BASE_B, "templates/lengths.png"){TEMPLATE_2_8_B(0,6)}
-spriteset(SPRITE_TEST_LOCO_BASE_C, "templates/lengths.png"){TEMPLATE_2_4(0,6)}
+spriteset(SPRITE_TEST_LOCO_BASE_A, "src/templates/lengths.png"){TEMPLATE_9_8_A(0,8)}
+spriteset(SPRITE_TEST_LOCO_BASE_B, "src/templates/coaches.png"){TEMPLATE_9_4(0,0)}
+spriteset(SPRITE_TEST_LOCO_BASE_C, "src/templates/coaches.png"){TEMPLATE_9_4(0,2)}
 
-
-
-switch(FEAT_TRAINS,PARENT,SW_TEST_LOCO_BASE,vehicle_is_reversed){0:SPRITE_TEST_LOCO_BASE_A;SPRITE_TEST_LOCO_BASE_B;}
-switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_LIVERY,cargo_subtype){0:SW_TEST_LOCO_BASE;SPRITE_TEST_LOCO_BASE_C;}
-switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_TEXT,cargo_subtype){0:string(STR_GRF_NAME);1:string(STR_GRF_DESC);CB_RESULT_NO_TEXT;}
-
-
-
-
+spriteset(SPRITE_TEST_LOCO2_BASE_A, "src/templates/lengths.png"){TEMPLATE_8_8_A(0,0)}
 
 /*	
 	
@@ -408,11 +434,52 @@ switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_TEXT,cargo_subtype){0:string(STR_GRF_NAME);
 
 */
 
+switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_LIVERY, cargo_subtype){
+	1:SPRITE_TEST_LOCO_BASE_B;
+	2:SPRITE_TEST_LOCO_BASE_C;
+	SPRITE_TEST_LOCO_BASE_A;
+}
+
+switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_LIVTEXT, cargo_subtype){
+	0:string(STR_TEMPA);
+	1:string(STR_TEMPB);
+	2:string(STR_TEMPC);
+	CB_RESULT_NO_TEXT;
+}
+
 switch(FEAT_TRAINS,SELF,SW_TEST_LOCO_ARTPART, extra_callback_info1){
-	1..3:ITEM_TEST;
+	1:ITEM_TEST_TRAIL;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
+
+item (FEAT_TRAINS, ITEM_TEST_TRAIL, 6401){
+	property{
+		name:							string(STR_TEMP);
+		climates_available:				NO_CLIMATE;
+		introduction_date:				date(1,1,1);
+		cargo_allow_refit:				[MAIL];
+		cargo_capacity:					30;
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		vehicle_life:					10;
+		reliability_decay:				1;
+		cost_factor:					1;
+		running_cost_base:				1;
+		running_cost_factor:			1;
+		speed:							100 mph;
+		track_type:						RAIL;
+		power:							800 kW;
+		weight:							42 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+	}
+	graphics{
+		default:SPRITE_BLANK;
+	}
+}
 
 item (FEAT_TRAINS, ITEM_TEST, 6400){
 	property{
@@ -420,28 +487,55 @@ item (FEAT_TRAINS, ITEM_TEST, 6400){
 		climates_available:				ALL_CLIMATES;
 		introduction_date:				date(1,1,1);
 		cargo_allow_refit:				[MAIL];
-		cargo_capacity:					1;
+		cargo_capacity:					30;
 		model_life:						VEHICLE_NEVER_EXPIRES;
-		vehicle_life:					100;
+		vehicle_life:					10;
 		reliability_decay:				1;
 		cost_factor:					1;
 		running_cost_base:				1;
-		running_cost_factor:			1;	
-		speed:							200 mph;
+		running_cost_factor:			1;
+		speed:							100 mph;
 		track_type:						RAIL;
-		power:							100 kW;
-		weight:							100 ton;
+		power:							800 kW;
+		weight:							42 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.4;			
-		air_drag_coefficient:			0.1;	
-		length:							2;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 	}
 	graphics{
 		default:SW_TEST_LOCO_LIVERY;
-		cargo_subtype_text:SW_TEST_LOCO_TEXT;
-		cargo_capacity:SW_TEST_LIMIT_0;
+		cargo_subtype_text:SW_TEST_LOCO_LIVTEXT;
 		articulated_part:SW_TEST_LOCO_ARTPART;
+	}
+}
+
+item (FEAT_TRAINS, ITEM_TEST2, 6402){
+	property{
+		name:							string(STR_TEMP);
+		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1,1,1);
+		cargo_allow_refit:				[MAIL];
+		cargo_capacity:					30;
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		vehicle_life:					10;
+		reliability_decay:				1;
+		cost_factor:					1;
+		running_cost_base:				1;
+		running_cost_factor:			1;
+		speed:							100 mph;
+		track_type:						RAIL;
+		power:							800 kW;
+		weight:							42 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+	}
+	graphics{
+		default:SPRITE_TEST_LOCO2_BASE_A;
 	}
 }
 
