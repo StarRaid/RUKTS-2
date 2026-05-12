@@ -40,12 +40,13 @@ SVLNK,1997,SilverLink
 NTSPR,1998,Northern Spirit
 HULLT,2000,Hull Trains
 NTWKR,2002,Network Rail
-AVTWL,2003,Arriva,Trains Wales,Early
-AVTWE,2003,Arriva,Trains Wales,Executive
-AVRNT,2016,Arriva,Rail Northern
-AVTMS,1997,Arriva,Trains Merseyside
-AVXCT,2006,Arriva,CrossCountry
-AVXCT,2026,Arriva,CrossCountry,New
+ARTWL,2003,Arriva,Trains Wales,A
+ARTWL,2003,Arriva,Trains Wales,B
+ARTWE,2003,Arriva,Trains Wales,Executive
+ARRNT,2016,Arriva,Rail Northern
+ARTMS,1997,Arriva,Trains Merseyside
+ARXCT,2006,Arriva,CrossCountry
+ARXCT,2026,Arriva,CrossCountry,New
 GCBLA,2007,Grand Central,Black
 GCBGS,2007,Grand Central,Gold Stripe
 SCANT,2004,Serco-Abellio,Northern Rail
