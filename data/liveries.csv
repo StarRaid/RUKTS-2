@@ -1,52 +1,64 @@
-code,introduction_year,company,name,variant
-COLAS,2007,Colas Rail
-FLRAG,1998,Freightliner,Racing Green
-FLHHL,,Freightliner,Heavy Haul
-FLGWO,2020,Freightliner,Genesee & Wyoming, Orange
-FLGHG,2025,Freightliner,Genesee & Wyoming Heritage, Green
-FLGHO,2025,Freightliner,Genesee & Wyoming Heritage, Orange
-FLGHW,2025,Freightliner,Genesee & Wyoming Heritage, White
-LUMO_,2021,Lumo
-CAPPH,2020,Cappagh
-LORAM,2019,Loram Rail Operations
-AVWCY,2019,Avanti West Coast
-AVWCG,2019,Avanti West Coast,Pride
-AVWCP,2019,Avanti West Coast,Plain White
-SCSAL,2015,Scotrail,Saltire
-SCSEV,2015,Scotrail,Seven Cities
-HITCH,2015,Hitachi Rail
-SCSLE,2015,Caledonian Sleeper
-FSCCN,2006,First,Capital Connect
-FSGWF,1998,First,Great Western,Fag packet
-FSGWP,2006,First,Great Western,Plain Blue
-FSGWB,2002,First,Great Western,Barbie
-FSGWW,2004,First,Great Western,Link
-FSGWL,2006,First,Great Western,Local Lines
-FSGWD,2006,First,Great Western,Dynamic Lines
-FSTPE,2004,First,TransPennine Express
-FSSCB,2004,First,ScotRail,Barbie
-FS,2008,First,Hull Trains
-FS,,First,
-NXSCR,1997,National Express,Scotrail
-NXESC,
-STGRN,2001,Govia,Southern
-WESXT,2001,Wessex Trains
-HNRCA,1998,Harry Needle Railroad Company,Orange,Early
-HNRCA,2020,Harry Needle Railroad Company,Orange,Late
-VTXCT,1997,Virgin Trains
-VTWCA,1997,Virgin Trains,West Coast,Early
-VTWCL,2001,Virgin Trains,West Coast,Late
-SVLNK,1997,SilverLink
-NTSPR,1998,Northern Spirit
-HULLT,2000,Hull Trains
-NTWKR,2002,Network Rail
-ARTWL,2003,Arriva,Trains Wales,A
-ARTWL,2003,Arriva,Trains Wales,B
-ARTWE,2003,Arriva,Trains Wales,Executive
-ARRNT,2016,Arriva,Rail Northern
-ARTMS,1997,Arriva,Trains Merseyside
-ARXCT,2006,Arriva,CrossCountry
-ARXCT,2026,Arriva,CrossCountry,New
-GCBLA,2007,Grand Central,Black
-GCBGS,2007,Grand Central,Gold Stripe
-SCANT,2004,Serco-Abellio,Northern Rail
+code,company,name,variant
+BRBLU,BR,Blue
+BRBLG,BR,Blue & Grey
+PROVI,BR,Provincial
+REGIR,BR,Regional Railways
+INMAI,BR,Intercity Mainline
+ICEXE,BR,Intercity Executive
+ICSWA,BR,Intercity Swallow
+COLAS,Colas Rail
+FLRAG,Freightliner,Racing Green
+FLHHL,Freightliner,Heavy Haul
+FLGWO,Freightliner,Genesee & Wyoming,Orange
+FLGHG,Freightliner,Genesee & Wyoming,Heritage Green
+FLGHO,Freightliner,Genesee & Wyoming,Heritage Orange
+FLGHW,Freightliner,Genesee & Wyoming,Heritage White
+LUMO_,Lumo
+CAPPH,Cappagh
+LORAM,Loram Rail Operations
+AVWCY,Avanti West Coast
+AVWCG,Avanti West Coast,Pride
+AVWCP,Avanti West Coast,Plain White
+SCSAL,Scotrail,Saltire
+SCSEV,Scotrail,Seven Cities
+HITCH,Hitachi Rail
+SCSLE,Caledonian Sleeper
+FSCCN,First,Capital Connect
+FSGWF,First,Great Western,Fag packet
+FSGWP,First,Great Western,Plain Blue
+FSGWB,First,Great Western,Barbie
+FSGWW,First,Great Western,Link
+FSGWL,First,Great Western,Local Lines
+FSGWD,First,Great Western,Dynamic Lines
+FSTPE,First,TransPennine Express
+FSSCB,First,ScotRail,Barbie
+FSHUL,First,Hull Trains
+FS,First,
+NXSCR,National Express,Scotrail
+NXESC,National Express,East Coast
+STGRN,Govia,Southern
+WESXT,Wessex Trains
+HNRCA,Harry Needle Railroad Company,Orange,Early
+HNRCA,Harry Needle Railroad Company,Orange,Late
+VTXCT,Virgin Trains
+VTWCA,Virgin Trains,West Coast,Early
+VTWCL,Virgin Trains,West Coast,Late
+VTESC,Virgin Trains,East Coast
+SVLNK,SilverLink
+NTSPR,Northern Spirit
+HULLT,Hull Trains
+NTWKR,Network Rail
+ARTWL,Arriva,Trains Wales,A
+ARTWL,Arriva,Trains Wales,B
+ARTWE,Arriva,Trains Wales,Executive
+ARRNT,Arriva,Rail Northern
+ARTMS,Arriva,Trains Merseyside
+ARXCT,Arriva,CrossCountry
+ARXCT,Arriva,CrossCountry,New
+GCBLA,Grand Central,Black
+GCBGS,Grand Central,Gold Stripe
+SCANT,Serco-Abellio,Northern Rail
+GBRFO,GBRf,Original
+GBRFF,First,GBRf
+GBRFE,GBRf,Europorte
+GBRFL,GBRf,Late
