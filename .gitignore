@@ -1,6 +1,6 @@
 
 copy.bat
-.nmlcache
+.nmlcache/
 run.bat
 output.png
 *.lnk
