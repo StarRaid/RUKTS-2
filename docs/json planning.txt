@@ -1,4 +1,33 @@
-JSON properties
+
+## JSON parser
+
+Three stage compilation process:
+
+ - PNML parsing
+ - PNML combining
+ - NML compiling
+
+The PNML combining and NML compiling stages are the exact same as the previous compilation process in RUKTS 1.x, where individual PNML files are written by hand, then a python script combines them into a singular NML file, which is finally compiled into the GRF file. Where we differ is how the PNML files are made.
+
+Using JSON objects to define the sprites, vehicles, and consists, PNML files and code are then generated from templates using those JSON objects. This is the PNML parsing stage.
+
+The JSON parser has three stages itself:
+
+ - Sprite definition
+ - Vehicle definition
+ - Consist definition
+
+First sprites are defined, storing their length, livery, and classification (e.g. Mark 1 TSO).
+Next, vehicles are defined, being individual coaches, wagons, or locomotives, gaining their capacities and cargo types. Additionally, they can flagged as purchasable.
+Finally, consists are defined as fixed formations of individual vehicles, in the form of either a multiple unit or a pre-assembled consist of locomotives & trailers.
+
+To simplify the coding of singular locomotives or wagons that are not used in any context outside of their own, these features can all be defined in one JSON file. The order or arrangement in which objects are defined should not 
+
+Additionally, checksums can be generated and stored, then compared with existing files to skip unchanged files during compilation. This can skip repetitive functions that would otherwise lengthen every compilation.
+
+Finally, if this system is effective, it could warrant distribution with the wider OpenTTD community, as a singular all-in-one package for compiling GRFs using only Python and the required libraries as prerequesites.
+
+## JSON properties
 
 
 
