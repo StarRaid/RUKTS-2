@@ -7,9 +7,9 @@ BR Mark 1 CCT,British Rail,1954,{},{}
 BR Mark 1 Sub,British Rail,1954,{BR Maroon; BR Blue; BR Blue & Grey; LSE; NSE},{F; C; S; SO; BS; DBS}
 BR Mark 1 Short Sub,British Rail,1954,{Same as above},{C; S; SO; BS; DC}
 BR Mark 2 Pullman,British Rail,1964,{},{PFB; PFK; PFP}
-BR Mark 2A-C,British Rail,1967,{BR Maroon; BR Green; BR Blue & Grey},{TSO-A; TSO-C; BSO; FK; BFK}
+BR Mark 2A-C,British Rail,1964,{BR Maroon; BR Green; BR Blue & Grey},{TSO-A; TSO-C; BSO; FK; BFK}
 BR Mark 2D-F,British Rail,1971,{},{TSO; BSO; FO; RFB; DBSO}
-BR Mark 3A,British Rail,1975,{BR Blue & Grey},{BG; RFB; SLEP; FO; BSO; TSO; DVT}
+BR Mark 3A,British Rail,1975,{BR Blue & Grey},{BG; RFB; SLEP; FO; BSO; TSO; DVT; DSO}
 BR Mark 3 HST,British Rail,1976,{BR Blue & Grey},{TRUB; TF; TS; TGS}
 BR Mark 4,British Rail,,{},{FO; RSB; TSO; TSOE; DVT}
 LNER Teak,Gresley,,{},{}
